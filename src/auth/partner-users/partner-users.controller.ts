@@ -9,7 +9,7 @@ export class PartnerUsersController {
 
   @Post()
   async create(@Body() data: CreateUserDto) {
-    const user = await this.usersService.createCommonUser(data);
+    const user = await this.usersService.createPartnerUser(data);
     return new UserPresenter(user);
   }
 }
