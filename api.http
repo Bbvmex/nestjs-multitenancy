@@ -1,0 +1,21 @@
+GET http://localhost:3000/users
+
+### Usuário comum
+POST http://localhost:3000/users
+Content-type: application/json
+
+{
+    "name": "John Smith",
+    "email": "john5@test.com",
+    "password": "1234567"
+}
+
+### Usuário partner
+POST http://localhost:3000/partners/users
+Content-type: application/json
+
+{
+    "name": "James Smith",
+    "email": "James@test.com",
+    "password": "1234567"
+}
